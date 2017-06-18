@@ -1,0 +1,30 @@
+@import url(colors);
+.page-not-found {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+  min-height: ~"calc(100vh - 121px)";
+  position: relative;
+  .wrapper {
+    position: absolute;
+    top: 40%; left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .main {
+    font-size: 140px;
+    font-weight: 700;
+    color: @hover;
+  }
+  .second {
+    font-size: 50px;
+    color: @hover;
+  }
+  p {
+    margin: 50px auto 0;
+    max-width: 500px;
+    text-align: center;
+    a {
+      color: @hover;
+    }
+  }
+}

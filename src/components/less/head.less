@@ -1,0 +1,35 @@
+@import url(colors);
+@import url(mixin);
+.home-page {
+  .header {
+    background-color: rgba(255,255,255,0.8);
+  }
+}
+.header {
+  display: block;
+  z-index: 10;
+  position: relative;
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    border-bottom: 1px solid @border;
+    .nav {
+      float: right;
+      .item {
+        display: inline-block;
+        line-height: 90px;
+        padding: 0 15px;
+        font-size: 15px;
+        color: @black;
+        text-decoration: none;
+        &:visited {
+          color: @black;
+        }
+        &:hover, &:active {
+          color: @hover;
+        }
+      }
+    }
+    .mix-clear;
+  }
+}
